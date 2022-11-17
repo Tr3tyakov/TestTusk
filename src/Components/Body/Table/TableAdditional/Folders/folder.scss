@@ -1,0 +1,49 @@
+.folder--deactive {
+  display: none;
+}
+
+.background__folder {
+  position: relative;
+  z-index: 3000;
+  cursor: pointer;
+}
+
+.background__folder:hover {
+  border-radius: 6px;
+  background-color: var(--secondary);
+}
+.background__folder:hover .folder--deactive {
+  display: block;
+}
+
+.background__folder::before:first-child {
+  background-color: inherit;
+}
+
+.background__folder--line::after {
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 1px;
+  bottom: 12px;
+  left: -13px;
+  background-color: #c6c6c6;
+  z-index: -2;
+  pointer-events: none;
+}
+.background__folder--line::before {
+  position: absolute;
+
+  content: '';
+  width: 1px;
+  height: 60px;
+  top: -45px;
+  left: -13px;
+  background-color: #c6c6c6;
+  z-index: -2;
+  pointer-events: none;
+}
+
+.folder {
+  position: relative;
+}

@@ -1,0 +1,26 @@
+.table {
+  border-collapse: collapse;
+  &__header {
+    color: var(--typography-gray);
+  }
+  &__title {
+    white-space: nowrap;
+  }
+  &__body {
+    overflow-y: scroll;
+  }
+}
+
+table thead td {
+  text-align: start;
+  height: 42px;
+  border-bottom: 1px solid var(--secondary);
+  padding: 0 15px;
+}
+
+table tbody td {
+  height: 60px;
+  text-align: start;
+  border-bottom: 1px solid var(--secondary);
+  padding: 0 15px;
+}

@@ -1,0 +1,11 @@
+.navigation {
+  background-color: inherit;
+  height: calc(100vh - 44px);
+  &--active {
+    background-color: var(--typography-gray);
+  }
+}
+
+.navigation__arrow--active {
+  transform: rotate(180deg);
+}
